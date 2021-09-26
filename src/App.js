@@ -21,7 +21,7 @@ function App() {
       <Switch>
         <Route exact path="/">
         <h1>FAN FAK ASIK!</h1>
-      {fact&&<p>{fact}</p>}
+      {fact&&<p className ="fact">{fact}</p>}
       <button onClick = {fetchData}>AAAAAAAHHHH</button>
       <br/><br/>
       <Link to="/gaknemuhiks">
@@ -29,9 +29,14 @@ function App() {
       </Link>  
         </Route>
         <Route path="/profile" exact><h1>Hai aku profile</h1></Route>
-        <Route path="*"><h1>aku 404</h1></Route>
+        <Route path="*">
+          <Link to="/">
+          <button className="eror">aku 404</button>
+          </Link>
+          </Route>
       </Switch>
     </BrowserRouter>
+    <section>&copy; Kopi-kanan by LBE RPL 2021</section>
     </div>
   );
 }

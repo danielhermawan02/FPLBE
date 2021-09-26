@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
 .App {
   text-align: center;
+  background-color: silver;
+  font-family: 'Stick No Bills', sans-serif;
 }
 
 .App-logo {
@@ -31,6 +35,33 @@
 
 button {
   cursor: pointer;
+}
+
+h1 {
+  padding-top: 150px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+section {
+  margin-top: 200px;
+}
+
+.eror {
+  font-size: 100px;
+  cursor: pointer;
+  margin-top: 200px;
+  border: 3px black solid;
+  border-radius: 15px;
+  background-color: silver;
+}
+
+.eror:hover {
+  color: silver;
+  border: 1px silver solid;
+}
+
+.fact {
+  font-size: 45px;
 }
 
 @keyframes App-logo-spin {
